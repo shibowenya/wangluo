@@ -1,0 +1,32 @@
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    </head>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>输入密码后获取网络密码</title>
+  <script>
+     var password = "banianliuban";
+      function checkPassword() {
+      var inputPassword = document.getElementById("password").value;
+      if (inputPassword === password) {
+
+        window.location.href = "wangluomima.html";
+      } else {
+
+        alert("密码错误，请重新输入！");
+      }
+    }
+  </script>
+</head>
+<body>
+  <h1>输入密码后获取网络密码</h1>
+  <form>
+    <label for="password">请输入密码（班级全拼小写）：</label>
+    <input type="password" id="password" name="password">
+    <button type="button" onclick="checkPassword()">进入</button>
+  </form>
+</body>
+</html>
